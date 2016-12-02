@@ -5,7 +5,12 @@ class LedTest < Minitest::Test
     refute_nil ::Led::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_to_led
+    expected = <<-END.chomp
+     _   _   _ 
+ |   _|  _|  _|
+ |  |_   _|  _|
+END
+    assert_equal expected, Led.to_led(1233)
   end
 end
