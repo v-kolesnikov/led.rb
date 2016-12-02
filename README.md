@@ -1,8 +1,8 @@
+[![Build Status](https://travis-ci.org/v-kolesnikov/led.rb.svg?branch=master)](https://travis-ci.org/v-kolesnikov/led.rb)
+
 # Led
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/led`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Convert numbers to led string.
 
 ## Installation
 
@@ -22,8 +22,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+puts Led.to_led(2017)
 
+  _   _       _
+  _| | |  |    |
+ |_  |_|  |    |
+=> nil
+```
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
@@ -38,4 +44,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
