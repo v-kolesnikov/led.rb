@@ -1,5 +1,16 @@
 sudo: false
+
 language: ruby
+
 rvm:
   - 2.3.1
+
 before_install: gem install bundler -v 1.12.5
+
+deploy:
+  provider: rubygems
+  gem: led
+  api_key:
+    secure: tBGwaJk8azucXA0PqIT7wozGtHXZ9TiPGiMaYPZHalsK5xf0c60w60T4nfDOnJtRlEJhCsuHh4NQX+21ewnkk+/6wwYvuMDh5nTWtVn/+VdMj2kZ14d6p3ZfmKXI0wiuOUr51zgtpdLAlxVR3An87LFJ0K5reqotL1ypxUHk3jML8tLitrTsHx++K6HVkRD/v5YzJHoTaFgEOnb2ySC8zIt4jLApm4Wsd1WeXWqeybCkCgT4uWuKu0M4IW4p2LvW1Ed84XkDpVNBFHpcvzWDFucFRLit26Zbhq7ngdIw8kEHC3/TvFBDKjcLqhZPQeiYy0ALw2c5LBzrdFhiAqSo3/wS8bgJ1vs4Z+qIADoo2XOL9upyqAW8ZAyrfSek5X4aYDK3fnD/4amFjBtwsC+s5hJGa1xf/A7bPuOgZ3rKOUd7R8Xlgoh8YUpt8kdsQYM2ggi0x6TtCx5a1gi/hOIpHB5Kj9R/J1EroGIeRH/HtpQNHfxNswKOAc/md2EWQKbo/hDIrWRTBkke9FK9X+jQpAMph09sYDWDdF2slYtUw2sWFzoxcWaSmDMTW2xPYtQKyDNyATQj3bdAw+zGPlOz9VzDGqHcAVJQXq82uJirmNaBXFgk/z8LqTbUqVdmQThlaT/pj+FeIfQQt6KsE0dE01ShZh4BqMCVPF6SIt7akbc=
+  on:
+    tags: true
